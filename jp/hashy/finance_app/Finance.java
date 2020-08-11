@@ -8,4 +8,11 @@ class  Finance {
     this.price = price;
     this.campa = campa;
   }
+
+  public int getPrice() {
+    return this.price;
+  }
+  public int getCampa() {
+    return this.campa;
+  }
 }
