@@ -21,6 +21,11 @@ class Main {
     finance2.printData(count2);
 
     System.out.println("===================================");
+    int totalPrice = finance1.getPrice() + finance2.getPrice();
+    int totalCampa = finance1.getCampa() + finance2.getCampa();
+    System.out.println("納入金合計：" + totalPrice + "円");
+    System.out.println("カンパ合計：" + totalCampa + "円");
+    System.out.println("お預かり金合計：" + (totalPrice + totalCampa) + "円");
 
   }
 }
