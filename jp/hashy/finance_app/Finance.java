@@ -16,10 +16,15 @@ class  Finance {
     return this.campa;
   }
 
+  public void setMultiplicationData(int count) {
+    this.price *= count;
+    this.campa *= count;
+  }
+
   public void printData(int count) {
     System.out.println("会費口数：" + count);
-    System.out.println("金額：" + this.price * count + "円");
-    System.out.println("カンパ：" + this.campa * count + "円");
-
+    System.out.println("金額：" + this.price + "円");
+    System.out.println("カンパ：" + this.campa + "円");
   }
+
 }

@@ -11,12 +11,16 @@ class Main {
 
     System.out.print("会費納入口数を入力してください：");
     int count1 = sc.nextInt();
+    finance1.setMultiplicationData(count1);
     finance1.printData(count1);
 
     System.out.println("-----------------------------------");
     System.out.print("追加納入口数を入力してください：");
     int count2 = sc.nextInt();
+    finance2.setMultiplicationData(count2);
     finance2.printData(count2);
+
+    System.out.println("===================================");
 
   }
 }
