@@ -15,4 +15,11 @@ class  Finance {
   public int getCampa() {
     return this.campa;
   }
+
+  public void printData(int count) {
+    System.out.println("会費口数：" + count);
+    System.out.println("金額：" + this.price * count + "円");
+    System.out.println("カンパ：" + this.campa * count + "円");
+
+  }
 }

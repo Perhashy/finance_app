@@ -10,11 +10,13 @@ class Main {
 
 
     System.out.print("会費納入口数を入力してください：");
-    int Count1 = sc.nextInt();
-    System.out.println("会費口数：" + Count1);
+    int count1 = sc.nextInt();
+    finance1.printData(count1);
+
+    System.out.println("-----------------------------------");
     System.out.print("追加納入口数を入力してください：");
-    int Count2 = sc.nextInt();
-    System.out.println("追加口数：" + Count2);
+    int count2 = sc.nextInt();
+    finance2.printData(count2);
 
   }
 }
