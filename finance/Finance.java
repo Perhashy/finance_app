@@ -1,6 +1,7 @@
 package finance;
 
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class Finance {
   private int price;
@@ -14,7 +15,12 @@ public class Finance {
 
   public void setCount() {
     Scanner sc = new Scanner(System.in);
-    this.count = sc.nextInt();
+    try {
+      this.count = sc.nextInt();
+    } catch (InputMismatchException e) {
+      System.out.println("数値以外が入力されました、終了します");
+      System.exit(0);
+    }
   }
 
   public int getPrice() {
