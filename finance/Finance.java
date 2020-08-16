@@ -30,10 +30,6 @@ public class Finance {
     return this.campa;
   }
 
-  public int getCount() {
-    return this.count;
-  }
-
   public void total() {
     this.price *= this.count;
     this.campa *= this.count;
