@@ -1,12 +1,20 @@
 package finance;
 
+import java.util.Scanner;
+
 public class Finance {
   private int price;
   private int campa;
+  private int count = 0;
 
   Finance(int price, int campa) {
     this.price = price;
     this.campa = campa;
+  }
+
+  public void setCount() {
+    Scanner sc = new Scanner(System.in);
+    this.count = sc.nextInt();
   }
 
   public int getPrice() {
@@ -14,6 +22,10 @@ public class Finance {
   }
   public int getCampa() {
     return this.campa;
+  }
+
+  public int getCount() {
+    return this.count;
   }
 
   public void setMultiplicationData(int count) {
