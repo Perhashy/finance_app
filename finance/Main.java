@@ -10,15 +10,13 @@ public class Main {
 
 
     System.out.print("会費納入口数を入力してください：");
-    int count1 = sc.nextInt();
-    finance1.setMultiplicationData(count1);
-    finance1.printData(count1);
+    finance1.setCount();
+    finance1.printData();
 
     System.out.println("-----------------------------------");
     System.out.print("追加納入口数を入力してください：");
-    int count2 = sc.nextInt();
-    finance2.setMultiplicationData(count2);
-    finance2.printData(count2);
+    finance2.setCount();
+    finance2.printData();
 
     System.out.println("===================================");
     int totalPrice = finance1.getPrice() + finance2.getPrice();

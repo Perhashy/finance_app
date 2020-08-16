@@ -28,13 +28,14 @@ public class Finance {
     return this.count;
   }
 
-  public void setMultiplicationData(int count) {
-    this.price *= count;
-    this.campa *= count;
+  public void total() {
+    this.price *= this.count;
+    this.campa *= this.count;
   }
 
-  public void printData(int count) {
-    System.out.println("会費口数：" + count);
+  public void printData() {
+    this.total();
+    System.out.println("会費口数：" + this.count);
     System.out.println("金額：" + this.price + "円");
     System.out.println("カンパ：" + this.campa + "円");
   }
